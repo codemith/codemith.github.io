@@ -13,7 +13,7 @@ title                    : "Mithilesh Biradar"
 title_separator          : "-"
 name                     : &name "Mithilesh Biradar"
 description              : &description "AI/ML Engineer & Researcher — Clemson University"
-url                      : https://codemith.github.io
+url                      : https://mithilesh.github.io
 baseurl                  : ""
 repository               : "codemith/mithilesh.github.io"
 
@@ -34,7 +34,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : "https://arxiv.org/abs/2503.14552"
-  googlescholar    : # URL
+  googlescholar    : "https://scholar.google.com/citations?user=D88OOCYAAAAJ&hl=en&authuser=2"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # URL
