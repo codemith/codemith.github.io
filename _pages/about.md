@@ -16,14 +16,14 @@ I am passionate about building scalable AI systems from distributed GenAI pipeli
 - **Research Assistant - Clemson University** (Oct 2025 – Present)
   - Optimized the ACTOPO data structure on large-scale meshes (17.4M vertices), reducing cache misses by 99% and accelerating computation by 49%.
 
-- **AI Engineer Intern — TD SYNNEX** (May 2025 – Sep 2025)
+- **AI Engineer Intern - TD SYNNEX** (May 2025 – Sep 2025)
   - Collaborated with NVIDIA to build an intelligent assistant that automatically finds and synthesizes information scattered across company databases, reducing the time employees spend searching for answers.
 
 
 - **Research Assistant - Clemson University** (Nov 2024 – Apr 2025)
   - Built AI models to analyze social media and news content at scale, detecting threats and classifying sentiment across multiple languages.
 
-- **Machine Learning Engineer Intern** — TRUMPF Metamation (Jun 2023 – Sep 2023)
+- **Machine Learning Engineer Intern - TRUMPF Metamation** (Jun 2023 – Sep 2023)
   - Created a real-time computer vision system that monitors metal sheet bending in manufacturing, achieving 98.7% accuracy and improving production quality control.
 
 ## Recent Highlights
