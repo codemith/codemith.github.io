@@ -1,23 +1,32 @@
 ---
 title: "CosmosPapers — AI-Powered Research Aggregator"
-excerpt: "An open-source platform aggregating 50K+ academic papers with semantic search, AI agent for summarization, and interactive research trend visualizations.<br/><br/>**Tech Stack:** PostgreSQL, pgvector, FastAPI, Next.js, Docker, aiohttp<br/><br/>[Visit CosmosPapers →](http://cosmospapers.com)"
+excerpt: "A research discovery platform aggregating 54K+ papers from 15+ top-tier conferences, with semantic search, topic-trend exploration, and an AI Copilot for summaries, Q&A, and BibTeX.<br/><br/>[Visit CosmosPapers →](https://cosmospapers.com)"
 collection: portfolio
 ---
 
 ## Overview
 
-CosmosPapers is an open-source, AI-powered research aggregator that makes it easy to discover and explore academic papers from top-tier conferences.
+CosmosPapers is a full-stack research paper aggregation and discovery platform. It scrapes, indexes, and serves accepted papers from 15+ top-tier AI, Machine Learning, Computer Vision, and Security conferences spanning 2022 to 2026.
+
+**[Live Website](https://cosmospapers.com/)** | **[GitHub](https://github.com/RunWang123/cosmospaper)** 
 
 ### Key Features
-- **50K+ papers** from top-tier conferences (NeurIPS, CVPR, and more)
-- **Semantic search** powered by PostgreSQL's pgvector for high-dimensional vector similarity
-- **AI agent** for automated paper summarization and recommendations
-- **Interactive research trend visualizations**
+- **15+ top tier conferences** like CVPR, NeurIPS, ICLR, ICML, ICCV, ECCV, ACM CCS, ACM CHI, USENIX Security, IEEE S&P, IEEE VIS, NDSS, and SIGGRAPH, enabling users to semantically search and find more relevant results.
+- **Semantic search** using `BAAI/bge-base-en-v1.5` embeddings and PostgreSQL `pgvector`.
+- **BERTopic trend analytics** with 150 hierarchical topics and interactive visualizations.
+- **AI Copilot** for paper summarization, Q&A, and BibTeX generation using user-provided keys via NVIDIA NIM or Microsoft AI Foundry.
+- **Bookmarks and recommendations** - get recommendations of papers based on your bookmarks
+- **All without sign-ups!**
 
 ### Technical Highlights
-- Optimized high-dimensional vector similarity search using pgvector
-- Engineered asynchronous, multithreaded data pipelines with aiohttp
-- Containerized full-stack architecture with automated rate-limiting and secure reverse-proxying
-- Seamless cloud deployment optimized for concurrent user scale
+- Architected an end-to-end RAG pipeline for conference scraping, indexing, and retrieval.
+- Built a multimodal AI layer with LiteLLM-based provider routing for flexible Copilot workflows.
+- Optimized high-dimensional vector similarity search using PostgreSQL (pgvector), engineering multithreaded pipelines to process and ingest data efficiently for concurrent users.
+- Containerized the full stack with Docker Compose for reproducible local and cloud deployment.
 
-[GitHub Repository](https://github.com/codemith) | [Live Demo](http://cosmospapers.com)
+### Core Stack
+- **Frontend:** Next.js, React, TypeScript
+- **Backend:** Python, FastAPI, Uvicorn
+- **Database:** PostgreSQL + pgvector
+- **AI/ML:** LiteLLM, sentence-transformers (`BAAI/bge-base-en-v1.5`), BERTopic
+- **Deployment:** Docker, Oracle Cloud
