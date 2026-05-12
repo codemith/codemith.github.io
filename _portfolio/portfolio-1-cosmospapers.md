@@ -1,6 +1,6 @@
 ---
-title: "CosmosPapers - AI-Powered Research Aggregator"
-excerpt: "A research discovery platform aggregating 54K+ papers from 15+ top-tier conferences, with semantic search, topic-trend exploration, and an AI Copilot for summaries, Q&A, and BibTeX.<br/><br/>[Visit CosmosPapers →](https://cosmospapers.com)"
+title: "CosmosPapers - AI-Powered Research Aggregator - www.cosmospapers.com"
+excerpt: "A research discovery platform aggregating 54K+ papers from 15+ top-tier conferences, with semantic search, topic-trend exploration, and an AI Copilot for summaries, Q&A, and BibTeX."
 collection: portfolio
 ---
 
@@ -8,7 +8,7 @@ collection: portfolio
 
 CosmosPapers is a full-stack research paper aggregation and discovery platform. It scrapes, indexes, and serves accepted papers from 15+ top-tier AI, Machine Learning, Computer Vision, and Security conferences spanning 2022 to 2026.
 
-**[Live Website](https://cosmospapers.com/)** | **[GitHub](https://github.com/RunWang123/cosmospaper)** 
+<p><a href="https://cosmospapers.com/">Live Website</a> &nbsp; <a href="https://github.com/RunWang123/cosmospaper">GitHub</a></p>
 
 ### Key Features
 - **15+ top tier conferences** like CVPR, NeurIPS, ICLR, ICML, ICCV, ECCV, ACM CCS, ACM CHI, USENIX Security, IEEE S&P, IEEE VIS, NDSS, and SIGGRAPH, enabling users to semantically search and find more relevant results.

@@ -1,6 +1,6 @@
 ---
 title: "NASA ZEUS Air Quality Monitoring System"
-excerpt: "A real-time air quality intelligence platform that combines ground stations, NASA satellite observations, weather forecasts, and AI-powered ozone predictions in a unified monitoring dashboard.<br/><br/>[View Repository →](https://github.com/codemith/nasa-zeus)"
+excerpt: "A real-time air quality intelligence platform that combines ground stations, NASA satellite observations, weather forecasts, and AI-powered ozone predictions in a unified monitoring dashboard."
 collection: portfolio
 ---
 
@@ -8,7 +8,7 @@ collection: portfolio
 
 NASA ZEUS is an air quality monitoring and forecasting platform built for the NASA Space Apps Challenge. It unifies environmental signals from ground sensors, satellite observations, and weather feeds to provide actionable air quality insights for health-sensitive users.
 
-**[GitHub](https://github.com/codemith/nasa-zeus)** | **[NASA Space Apps Challenge](https://www.spaceappschallenge.org/)**
+<p><a href="https://github.com/codemith/nasa-zeus">GitHub</a> &nbsp; <a href="https://www.spaceappschallenge.org/">NASA Space Apps Challenge</a></p>
 
 ### Key Features
 - **Interactive heat-map monitoring** with live spatial air quality visualization.
