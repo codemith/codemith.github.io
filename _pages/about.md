@@ -108,6 +108,20 @@ Nov 2024 - Apr 2025
 - Built distributed PyTorch and Spark data pipelines for large-scale
   unstructured text processing.
 
+### Data Scientist Intern -- Tele Radio
+
+Dec 2023 - Jun 2024
+
+- Developed sales forecasting models using Python, Pandas, and scikit-learn,
+  applying feature engineering and trend analysis on CRM and historical sales
+  data to support demand planning and business decision-making.
+- Automated ETL processes using Python and SQL, reducing manual effort by 60%,
+  and built interactive Power BI dashboards with DAX-based KPIs for real-time
+  visibility into sales performance and operational trends.
+- Contributed to CRM modernization by building Python- and SQL-based workflows
+  to extract, validate, and migrate customer and sales records, improving data
+  accuracy and consistency across systems.
+
 ### Machine Learning Engineer Intern -- TRUMPF Metamation
 
 Jun 2023 - Sep 2023
