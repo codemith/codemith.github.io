@@ -6,6 +6,8 @@ excerpt: >-
   AI/ML Engineer resume focused on GenAI, RAG, SQL-RAG, NLP, LLMs, FastAPI,
   PostgreSQL/pgvector, AWS, Docker, NVIDIA NeMo, and NVIDIA NIM.
 author_profile: true
+redirect_to: /files/Mithilesh_Biradar_resume.pdf
+sitemap: false
 redirect_from:
   - /resume
 ---

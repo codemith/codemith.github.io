@@ -3,6 +3,8 @@ layout: archive
 title: "CV"
 permalink: /cv-json/
 author_profile: false
+redirect_to: /files/Mithilesh_Biradar_resume.pdf
+sitemap: false
 redirect_from:
   - /resume-json
 ---
@@ -11,7 +13,4 @@ redirect_from:
 
 {% include cv-template.html %}
 
-<div class="cv-download-links">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
-</div>
+<p><a href="{{ base_path }}/files/Mithilesh_Biradar_resume.pdf">Download CV as PDF</a></p>

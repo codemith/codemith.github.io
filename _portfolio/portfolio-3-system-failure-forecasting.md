@@ -16,7 +16,7 @@ time-series data so teams can monitor system health before downtime occurs.
 
 <p>
   <a class="btn btn--primary" href="#architecture">Architecture</a>
-  <a class="btn" href="/cv/">Resume Context</a>
+  <a class="btn" href="/files/Mithilesh_Biradar_resume.pdf">Resume Context</a>
 </p>
 
 ## Problem
@@ -62,7 +62,7 @@ deployment through AWS SageMaker-style training and inference stages.
 
 <p>
   <a class="btn btn--primary" href="#architecture">Architecture</a>
-  <a class="btn" href="/cv/">Resume Context</a>
+  <a class="btn" href="/files/Mithilesh_Biradar_resume.pdf">Resume Context</a>
 </p>
 
 <!--
