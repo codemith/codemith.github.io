@@ -137,6 +137,9 @@ Jun 2023 - Sep 2023
 
 ## Recent Highlights
 
+- [07/17/2026] **IEEE VIS 2026 Paper Accepted** - ***Subdivision Matters:
+  Partitioning Strategies for Task-Parallel Topological Visualization*** was
+  accepted to **IEEE VIS 2026**.
 - [02/28/2026] **CUHackit 2026 Winner** - Won the **Microsoft** and
   **TD SYNNEX** challenge for best use of AI Agents with CosmosPapers.
 - [09/24/2025] **TD SYNNEX Inspire** - Project Knode was featured in
