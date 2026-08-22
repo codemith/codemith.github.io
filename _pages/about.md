@@ -34,7 +34,7 @@ feature_row:
 ---
 
 I am an M.S. Computer Science graduate from Clemson University who builds
-end-to-end AI and machine-learning systems—from model development and
+end-to-end AI and machine learning systems from model development and
 evaluation through retrieval, backend services, cloud deployment, and
 simulation. My work spans GenAI/RAG, core deep learning, reinforcement
 learning, computer vision, forecasting, and Physical AI.
@@ -73,7 +73,7 @@ systems with explicit data, model, runtime, and deployment boundaries.
 
 ## Experience
 
-### AI Engineer Intern -- TD SYNNEX
+### AI Engineer Intern - TD SYNNEX
 
 May 2025 - Sep 2025  
 Built production-oriented GenAI/RAG and SQL-RAG workflows in collaboration with
@@ -90,7 +90,7 @@ NVIDIA.
 - Built SQL-RAG and Excel-to-PostgreSQL ETL workflows enabling natural-language
   querying of financial and operational data.
 
-### Research Assistant -- Clemson University
+### Research Assistant - Clemson University
 
 Oct 2025 - May 2026
 
@@ -98,7 +98,7 @@ Oct 2025 - May 2026
   bottlenecks, reducing cache misses by 99% and improving computation speed by
   49%.
 
-### Research Assistant -- Clemson University
+### Research Assistant - Clemson University
 
 Nov 2024 - Apr 2025
 
@@ -108,7 +108,7 @@ Nov 2024 - Apr 2025
 - Built distributed PyTorch and Spark data pipelines for large-scale
   unstructured text processing.
 
-### Data Scientist Intern -- Tele Radio
+### Data Scientist Intern - Tele Radio
 
 Dec 2023 - Jun 2024
 
@@ -122,7 +122,7 @@ Dec 2023 - Jun 2024
   to extract, validate, and migrate customer and sales records, improving data
   accuracy and consistency across systems.
 
-### Machine Learning Engineer Intern -- TRUMPF Metamation
+### Machine Learning Engineer Intern - TRUMPF Metamation
 
 Jun 2023 - Sep 2023
 
