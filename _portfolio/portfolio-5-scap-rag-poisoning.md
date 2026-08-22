@@ -67,6 +67,23 @@ model cross-checks potentially conflicting evidence.
 - Preserved relevant evidence that score-cluster filtering would otherwise
   discard, reducing the risk of false positives during answer generation.
 
+### Evaluation Snapshots
+
+<figure>
+  <img src="/images/projects/scap-results-natural-questions.png" alt="SCAP Natural Questions evaluation showing suspicious and normal retrieval-score clusters, with suspicious documents flagged for verification." />
+  <figcaption><strong>Natural Questions:</strong> a SCAP evaluation run that separates suspicious and normal retrieval-score clusters; the project reported 90% defense effectiveness on this benchmark.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/projects/scap-results-hotpotqa.png" alt="SCAP HotpotQA evaluation showing the clustering analysis and suspicious documents flagged for verification." />
+  <figcaption><strong>HotpotQA:</strong> cluster-aware prompting retains retrieved evidence while flagging the suspicious group for cross-verification; the project reported 90% defense effectiveness.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/projects/scap-results-msmarco.png" alt="SCAP MS MARCO evaluation showing suspicious retrieval-score clusters and the defense decision." />
+  <figcaption><strong>MS MARCO:</strong> SCAP identifies a suspicious high-relevance group without hard-filtering the full context set; the project reported 80% defense effectiveness.</figcaption>
+</figure>
+
 ## Technical Highlights
 
 - RAG security and knowledge-poisoning defense
