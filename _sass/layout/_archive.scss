@@ -107,6 +107,48 @@
   }
 }
 
+/* Project index */
+
+.project-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+
+  .list__item {
+    position: relative;
+    padding: 0 0 1.5rem 1.8rem;
+    border-bottom: 1px solid var(--global-base-color);
+
+    &::before {
+      position: absolute;
+      top: 0.45rem;
+      left: 0;
+      width: 0.7rem;
+      height: 0.7rem;
+      content: "";
+      background-color: var(--global-base-color);
+      border-radius: 50%;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  .archive__item-title {
+    margin: 0 0 0.55rem;
+    font-size: $type-size-4;
+    line-height: 1.25;
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 0;
+    font-size: $type-size-5;
+    line-height: 1.55;
+  }
+}
+
 
 /*
    Grid view
