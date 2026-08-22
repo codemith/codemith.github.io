@@ -2,8 +2,8 @@
 permalink: /
 title: "AI/ML Engineer Portfolio"
 excerpt: >-
-  AI/ML Engineer focused on GenAI, RAG, SQL-RAG, ML systems, FastAPI,
-  PostgreSQL/pgvector, AWS, Docker, NVIDIA NeMo, and NVIDIA NIM.
+  AI/ML engineer building production systems across GenAI/RAG, deep learning,
+  reinforcement learning, computer vision, and Physical AI.
 author_profile: true
 redirect_from:
   - /about/
@@ -33,26 +33,26 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-I am an M.S. Computer Science graduate from Clemson University focused on
-building production AI systems. My work spans multimodal RAG, SQL-RAG, NLP,
-computer vision, model inference optimization, and full-stack AI applications
-using Python, FastAPI, PostgreSQL/pgvector, LangChain, Docker, AWS, and NVIDIA
-NeMo/NIM.
+I am an M.S. Computer Science graduate from Clemson University who builds
+end-to-end AI and machine-learning systems—from model development and
+evaluation through retrieval, backend services, cloud deployment, and
+simulation. My work spans GenAI/RAG, core deep learning, reinforcement
+learning, computer vision, forecasting, and Physical AI.
 
-Most recently, I worked as an AI Engineer Intern at TD SYNNEX, where I built
-GenAI/RAG and SQL-RAG systems in collaboration with NVIDIA, including
-multi-source retrieval, query routing, and enterprise knowledge workflows. I am
-currently seeking Applied AI Engineer, Machine Learning Engineer, GenAI/RAG
-Engineer, AI Platform Engineer, and Backend AI Engineer roles.
+My experience includes enterprise GenAI/RAG and SQL-RAG workflows,
+transformer-based NLP, GPU inference optimization, distributed data pipelines,
+and large-scale scientific computing. I focus on reproducible, measurable
+systems with explicit data, model, runtime, and deployment boundaries.
 
 ## What I Build
 
 - Production GenAI/RAG systems over structured and unstructured enterprise data
 - SQL-RAG and natural-language analytics over relational databases
-- FastAPI backends and ML services for AI applications
-- PostgreSQL/pgvector retrieval systems and embedding pipelines
-- NLP, computer vision, forecasting, and data-intensive ML workflows
-- Dockerized ML applications deployed on AWS and cloud infrastructure
+- Deep-learning and reinforcement-learning workflows in PyTorch
+- Physical AI pipelines with OpenUSD, Isaac Lab, PhysX, and reproducible task
+  contracts
+- Computer-vision, forecasting, and data-intensive ML systems
+- FastAPI services, PostgreSQL/pgvector retrieval, Docker, and AWS deployment
 
 <p>
   <a class="btn btn--primary" href="/files/Mithilesh_Biradar_resume.pdf">Download Resume</a>
@@ -64,12 +64,12 @@ Engineer, AI Platform Engineer, and Backend AI Engineer roles.
 
 ## Technical Focus
 
-- GenAI/RAG
-- SQL-RAG
-- ML Systems
-- FastAPI/Backend
-- PostgreSQL/pgvector
-- AWS/Docker
+- AI/ML Systems
+- GenAI/RAG and SQL-RAG
+- Deep Learning and PyTorch
+- Reinforcement Learning and Physical AI
+- FastAPI and Vector Retrieval
+- AWS, Docker, and GPU Computing
 
 ## Experience
 

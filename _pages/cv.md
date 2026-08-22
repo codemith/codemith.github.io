@@ -3,8 +3,9 @@ layout: archive
 title: "Resume"
 permalink: /cv/
 excerpt: >-
-  AI/ML Engineer resume focused on GenAI, RAG, SQL-RAG, NLP, LLMs, FastAPI,
-  PostgreSQL/pgvector, AWS, Docker, NVIDIA NeMo, and NVIDIA NIM.
+  AI/ML engineering experience across production GenAI/RAG, deep learning,
+  reinforcement learning, computer vision, Physical AI, backend services, and
+  cloud deployment.
 author_profile: true
 redirect_to: /files/Mithilesh_Biradar_resume.pdf
 sitemap: false
@@ -18,9 +19,10 @@ You can also [download my resume as a PDF](/files/Mithilesh_Biradar_resume.pdf).
 
 ## Professional Focus
 
-AI/ML Engineer focused on production GenAI/RAG systems, SQL-RAG,
-natural-language analytics, NLP, model deployment, FastAPI backends,
-PostgreSQL/pgvector retrieval, AWS, Docker, and NVIDIA NeMo/NIM workflows.
+AI/ML engineer building production-oriented systems across GenAI/RAG, deep
+learning, reinforcement learning, computer vision, and Physical AI. Work spans
+model development and evaluation, retrieval, FastAPI services,
+PostgreSQL/pgvector, GPU inference, Docker, AWS, OpenUSD, and NVIDIA Isaac Lab.
 
 ## Education
 
