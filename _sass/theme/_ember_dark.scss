@@ -2,26 +2,26 @@
    EMBER THEME - DARK VERSION
    ========================================================================== */
 
-$primary-color              : #f59e0b;
-$gray                       : #9f9386;
-$dark-gray                  : #fff8ee;
-$darker-gray                : #fff8ee;
-$light-gray                 : #41352a;
-$lighter-gray               : #2a221a;
+$primary-color              : #ff6600;
+$gray                       : #ffffff;
+$dark-gray                  : #ffffff;
+$darker-gray                : #ffffff;
+$light-gray                 : #ff6600;
+$lighter-gray               : #ff6600;
 
-$background                 : #17130f;
-$background-light           : #211b15;
-$background-lighter         : #30261c;
-$text                       : #fff8ee;
-$link                       : #f59e0b;
-$link-dark                  : #fbbf24;
-$link-light                 : #fdba74;
+$background                 : #000000;
+$background-light           : #000000;
+$background-lighter         : #ff6600;
+$text                       : #ffffff;
+$link                       : #ff6600;
+$link-dark                  : #ff6600;
+$link-light                 : #ff6600;
 
-$danger-color               : #fb7185;
-$info-color                 : #f59e0b;
-$notice-color               : #c9bbaa;
-$success-color              : #a3e635;
-$warning-color              : #fbbf24;
+$danger-color               : #ff6600;
+$info-color                 : #ff6600;
+$notice-color               : #ff6600;
+$success-color              : #ff6600;
+$warning-color              : #ff6600;
 
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.35);
@@ -38,17 +38,17 @@ html[data-theme="dark"] {
   --global-footer-bg-color            : #{$background-light};
   --global-border-color               : #{$light-gray};
   --global-dark-border-color          : #{$background-lighter};
-  --global-code-background-color      : #100d0a;
+  --global-code-background-color      : #000000;
   --global-code-text-color            : #{$text};
-  --global-fig-caption-color          : #c9bbaa;
+  --global-fig-caption-color          : #ffffff;
   --global-link-color                 : #{$link};
   --global-link-color-hover           : #{$link-dark};
   --global-link-color-visited         : #{$link-light};
   --global-masthead-link-color        : #{$text};
   --global-masthead-link-color-hover  : #{$primary-color};
   --global-text-color                 : #{$text};
-  --global-text-color-light           : #c9bbaa;
+  --global-text-color-light           : #ffffff;
   --global-thead-color                : #{$background-lighter};
-  --global-accent-text-color          : #17130f;
-  --global-accent-hover-color         : #d97706;
+  --global-accent-text-color          : #ffffff;
+  --global-accent-hover-color         : #ff6600;
 }
