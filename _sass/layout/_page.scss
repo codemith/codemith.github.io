@@ -123,14 +123,31 @@
 .publication-list {
   display: grid;
   gap: 1.25rem;
+  margin-bottom: 0;
   margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
 }
 
 .publication-card {
-  padding: 1.5rem;
-  border: 1px solid var(--global-base-color);
-  border-left-width: 6px;
-  background-color: var(--global-bg-color);
+  position: relative;
+  padding: 0 0 1.5rem 1.8rem;
+  border-bottom: 1px solid var(--global-base-color);
+
+  &::before {
+    position: absolute;
+    top: 0.45rem;
+    left: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+    content: "";
+    background-color: var(--global-base-color);
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
 
   &__type {
     display: inline-block;
