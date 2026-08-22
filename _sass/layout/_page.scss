@@ -51,8 +51,19 @@
 .page__content {
 
   h2 {
+    position: relative;
     padding-bottom: 0.5em;
     border-bottom: 1px solid var(--global-border-color);
+
+    &::after {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 2.5rem;
+      height: 2px;
+      content: "";
+      background-color: var(--global-base-color);
+    }
   }
 
   p, li, dl {

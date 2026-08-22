@@ -1,0 +1,47 @@
+/* ==========================================================================
+   EMBER THEME - LIGHT VERSION
+   ========================================================================== */
+
+/* A warm, editorial palette: near-black type, paper-white surfaces, one orange accent. */
+$primary-color              : #c2410c;
+$gray                       : #74695e;
+$dark-gray                  : #1b1714;
+$darker-gray                : #120f0d;
+$light-gray                 : #d9cdbf;
+$lighter-gray               : #f1e7da;
+
+$danger-color               : #c2410c;
+$info-color                 : #b45309;
+$notice-color               : #74695e;
+$success-color              : #4d7c0f;
+$warning-color              : #d97706;
+
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(27, 23, 20, 0.12);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+:root {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #fff9f2;
+  --global-footer-bg-color            : #f3e7d8;
+  --global-border-color               : #{$lighter-gray};
+  --global-dark-border-color          : #d8c6b3;
+  --global-code-background-color      : #fff4e5;
+  --global-code-text-color            : #{$darker-gray};
+  --global-fig-caption-color          : #665c54;
+  --global-link-color                 : #{$primary-color};
+  --global-link-color-hover           : #9a3412;
+  --global-link-color-visited         : #7c2d12;
+  --global-masthead-link-color        : #{$dark-gray};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$dark-gray};
+  --global-text-color-light           : #665c54;
+  --global-thead-color                : #fff4e5;
+  --global-accent-text-color          : #fffaf5;
+  --global-accent-hover-color         : #9a3412;
+}

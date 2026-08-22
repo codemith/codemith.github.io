@@ -1,0 +1,54 @@
+/* ==========================================================================
+   EMBER THEME - DARK VERSION
+   ========================================================================== */
+
+$primary-color              : #f59e0b;
+$gray                       : #9f9386;
+$dark-gray                  : #fff8ee;
+$darker-gray                : #fff8ee;
+$light-gray                 : #41352a;
+$lighter-gray               : #2a221a;
+
+$background                 : #17130f;
+$background-light           : #211b15;
+$background-lighter         : #30261c;
+$text                       : #fff8ee;
+$link                       : #f59e0b;
+$link-dark                  : #fbbf24;
+$link-light                 : #fdba74;
+
+$danger-color               : #fb7185;
+$info-color                 : #f59e0b;
+$notice-color               : #c9bbaa;
+$success-color              : #a3e635;
+$warning-color              : #fbbf24;
+
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.35);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+html[data-theme="dark"] {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$background-light};
+  --global-border-color               : #{$light-gray};
+  --global-dark-border-color          : #{$background-lighter};
+  --global-code-background-color      : #100d0a;
+  --global-code-text-color            : #{$text};
+  --global-fig-caption-color          : #c9bbaa;
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #c9bbaa;
+  --global-thead-color                : #{$background-lighter};
+  --global-accent-text-color          : #17130f;
+  --global-accent-hover-color         : #d97706;
+}
