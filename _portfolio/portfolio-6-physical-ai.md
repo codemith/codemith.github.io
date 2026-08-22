@@ -1,9 +1,10 @@
 ---
-title: "Physical AI -- OpenUSD and Isaac Lab Pipeline"
+title: "Physical AI – OpenUSD, Isaac Lab, and Reinforcement Learning Pipeline"
 excerpt: >-
-  A reproducible robotics pipeline for OpenUSD scene contracts, deterministic
-  synthetic-data planning, artifact lineage, and an Isaac Lab/PhysX point-reach
-  proxy verified headlessly on an NVIDIA L40S.
+  A reproducible robotics and reinforcement-learning pipeline combining
+  OpenUSD scene contracts, deterministic synthetic-data planning, shared
+  analytical/Isaac Lab point-reach semantics, and headless PhysX validation on
+  an NVIDIA L40S.
 collection: portfolio
 permalink: /portfolio/physical-ai/
 order: 6
@@ -19,6 +20,7 @@ remain clearly distinguished.
 
 <p>
   <a class="btn btn--primary" href="#architecture">Architecture</a>
+  <a class="btn" href="#reinforcement-learning">Reinforcement Learning</a>
   <a class="btn" href="#verified-results">Verified Results</a>
 </p>
 
@@ -52,6 +54,30 @@ deterministic scenario plans, and records validation evidence. The optional
 Isaac Lab adapter preserves the same observation, action, timing, reset,
 randomization, and reward contracts while replacing analytical dynamics with a
 PhysX rigid body.
+
+## Reinforcement Learning
+
+The project defines `PhysicalAI-PointReach-v0`, an analytical two-dimensional
+point-reach environment used to make the learning contract inspectable before
+moving it into a heavier simulator.
+
+- The policy observes planar position, velocity, and target displacement as a
+  six-value vector.
+- It produces two normalized force commands that are clipped before entering
+  the analytical dynamics or Isaac Lab adapter.
+- Named reward terms cover progress, remaining distance, action magnitude,
+  velocity, settled success, and workspace violations.
+- Seeded resets support domain randomization over initial state, target, mass,
+  damping, actuator gain, observation noise, and action delay, with a
+  three-level curriculum.
+- Random and PD controllers provide classical baselines; an optional
+  Stable-Baselines3 PPO workflow adds configuration snapshots, multi-condition
+  evaluation, and hash-bound policy lineage.
+
+The Isaac Lab proxy maps the same observation, action, reward, reset, and
+termination semantics to a force-driven PhysX rigid body. This establishes a
+testable analytical-to-simulator contract; it does not claim a trained Isaac
+policy, articulated-robot control, or sim-to-real performance.
 
 ## Technical Highlights
 
