@@ -1,5 +1,5 @@
 ---
-title: "SCAP -- Defense Against RAG Knowledge Poisoning"
+title: "SCAP - Defense Against RAG Knowledge Poisoning"
 excerpt: >-
   A RAG security prototype that clusters retrieval similarity scores to flag
   suspiciously high-relevance documents and uses cluster-aware prompting to
