@@ -15,6 +15,7 @@ conditions. It runs in NVIDIA Isaac Lab on a Palmetto L40S GPU.
 <p>
   <a class="btn btn--primary" href="#demos">Watch the demos</a>
   <a class="btn" href="#results">See the results</a>
+  <a class="btn" href="{{ '/portfolio/physical-ai/results/' | relative_url }}">Detailed results</a>
   <a class="btn" href="https://github.com/codemith/Physical-AI">GitHub</a>
 </p>
 
@@ -63,8 +64,6 @@ the project does not label scripted behavior as learned behavior.
 | 4K pick-and-place | Successful 0.800 m lift with 0.129 m final target error |
 | Safety fault suite | Passed 15/15 software-in-the-loop scenarios |
 | GPU runtime | Verified in Isaac Lab on one NVIDIA L40S, including a standalone SLURM job |
-
-<p><a class="btn btn--primary" href="{{ '/portfolio/physical-ai/results/' | relative_url }}">View detailed results</a></p>
 
 The final UR10e policy is validated in articulated simulation. The project does
 not claim physical-robot testing or sim-to-real deployment.

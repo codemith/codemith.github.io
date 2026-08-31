@@ -145,9 +145,3 @@ The
 [final evidence bundle](https://github.com/codemith/Physical-AI/tree/main/physical-ai-data/evidence/ur10-rsl-l40s-2026-08-29/final_bundle)
 contains the logs, JSON reports, frozen configurations, source snapshots, and
 checksums.
-
-## Scope
-
-These measurements validate the software, policy, and articulated simulation.
-They do not claim physical robot execution, hardware-in-the-loop testing, ROS 2
-transport, or sim-to-real deployment.
