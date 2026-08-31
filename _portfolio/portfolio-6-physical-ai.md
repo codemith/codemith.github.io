@@ -68,5 +68,7 @@ the project does not label scripted behavior as learned behavior.
 The final UR10e policy is validated in articulated simulation. The project does
 not claim physical-robot testing or sim-to-real deployment.
 
+[View the detailed training and evaluation results.]({{ '/portfolio/physical-ai/results/' | relative_url }})
+
 **Stack:** Python, PyTorch, RSL-RL, NVIDIA Isaac Sim/Isaac Lab, PhysX, OpenUSD,
 Gymnasium, ROS 2-style contracts, Apptainer, and SLURM.
