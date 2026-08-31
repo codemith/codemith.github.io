@@ -6,7 +6,7 @@ excerpt: >-
   cross-check claims without discarding useful context.
 collection: portfolio
 permalink: /portfolio/scap-rag-poisoning/
-order: 5
+order: 6
 ---
 
 SCAP (Suspicious-Cluster-Aware Prompting) is a RAG security research prototype

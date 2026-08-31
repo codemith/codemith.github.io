@@ -6,7 +6,7 @@ excerpt: >-
   and autoregressive generation.
 collection: portfolio
 permalink: /portfolio/llm-from-scratch/
-order: 4
+order: 5
 ---
 
 This project implements a small GPT-style language model from the ground up in

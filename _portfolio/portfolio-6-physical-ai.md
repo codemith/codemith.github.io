@@ -5,13 +5,12 @@ excerpt: >-
   policy, with a separate 4K autonomous pick-and-place demonstration.
 collection: portfolio
 permalink: /portfolio/physical-ai/
-order: 6
+order: 2
 ---
 
 I built this project to connect reinforcement learning with an actual robotics
-workflow: define the task, train a policy, test it under harder conditions, and
-keep enough evidence to reproduce the result. It runs in NVIDIA Isaac Lab on a
-Palmetto L40S GPU.
+workflow: define the task, train a policy, and test it under harder
+conditions. It runs in NVIDIA Isaac Lab on a Palmetto L40S GPU.
 
 <p>
   <a class="btn btn--primary" href="#demos">Watch the demos</a>

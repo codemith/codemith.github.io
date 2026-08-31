@@ -6,7 +6,7 @@ excerpt: >-
   SageMaker-style ML workflows.
 collection: portfolio
 permalink: /portfolio/system-failure-forecasting/
-order: 3
+order: 4
 ---
 
 System Failure Forecasting was built for the Capgemini Predictive Failure

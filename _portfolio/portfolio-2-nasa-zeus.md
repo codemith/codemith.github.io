@@ -6,7 +6,7 @@ excerpt: >-
   ozone prediction through FastAPI and Next.js dashboards.
 collection: portfolio
 permalink: /portfolio/nasa-zeus/
-order: 2
+order: 3
 ---
 
 NASA ZEUS is an air-quality forecasting and monitoring platform built for the
