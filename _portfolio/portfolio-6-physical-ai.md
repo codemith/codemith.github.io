@@ -58,10 +58,13 @@ the project does not label scripted behavior as learned behavior.
 | Test | Measured result |
 |---|---|
 | UR10e policy evaluation | Passed all 9 reports: 3 seeds x nominal, randomized, and stress conditions |
+| UR10e reach accuracy | 2.1-2.9 cm mean settled error; worst p95 error of 8.8 cm |
 | Evaluation scale | 512 episodes and 44,800 settled samples per report |
 | 4K pick-and-place | Successful 0.800 m lift with 0.129 m final target error |
 | Safety fault suite | Passed 15/15 software-in-the-loop scenarios |
 | GPU runtime | Verified in Isaac Lab on one NVIDIA L40S, including a standalone SLURM job |
+
+<p><a class="btn btn--primary" href="{{ '/portfolio/physical-ai/results/' | relative_url }}">View detailed results</a></p>
 
 The final UR10e policy is validated in articulated simulation. The project does
 not claim physical-robot testing or sim-to-real deployment.
