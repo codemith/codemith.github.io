@@ -1,115 +1,71 @@
 ---
-title: "Physical AI – OpenUSD, Isaac Lab, and Reinforcement Learning Pipeline"
+title: "Physical AI - Reinforcement Learning and Robot Simulation"
 excerpt: >-
-  A reproducible robotics and reinforcement-learning pipeline combining
-  OpenUSD scene contracts, deterministic synthetic-data planning, shared
-  analytical/Isaac Lab point-reach semantics, and headless PhysX validation on
-  an NVIDIA L40S.
+  A reproducible Isaac Lab project for training and evaluating a UR10e reach
+  policy, with a separate 4K autonomous pick-and-place demonstration.
 collection: portfolio
 permalink: /portfolio/physical-ai/
 order: 6
 ---
 
-Physical AI is a reproducible reference implementation for connecting source
-assets, OpenUSD scene composition, deterministic synthetic-data planning,
-reinforcement-learning contracts, and simulator validation.
-
-The project separates a portable Python workflow from optional NVIDIA Isaac Lab
-execution so metadata planning, simulator evidence, and future robot deployment
-remain clearly distinguished.
+I built this project to connect reinforcement learning with an actual robotics
+workflow: define the task, train a policy, test it under harder conditions, and
+keep enough evidence to reproduce the result. It runs in NVIDIA Isaac Lab on a
+Palmetto L40S GPU.
 
 <p>
-  <a class="btn btn--primary" href="#architecture">Architecture</a>
-  <a class="btn" href="#reinforcement-learning">Reinforcement Learning</a>
-  <a class="btn" href="#verified-results">Verified Results</a>
+  <a class="btn btn--primary" href="#demos">Watch the demos</a>
+  <a class="btn" href="#results">See the results</a>
+  <a class="btn" href="https://github.com/codemith/Physical-AI">GitHub</a>
 </p>
 
-## Problem
+## Demos
 
-Physical AI workflows cross asset formats, coordinate frames, calibration,
-simulation runtimes, datasets, policies, and hardware. Small inconsistencies in
-units, versions, timing, or preprocessing can invalidate downstream results.
-This project makes those boundaries explicit through versioned contracts,
-deterministic generation, validation, checksums, and artifact lineage.
+### UR10e PPO reach policy
 
-## My Contributions
+<video controls playsinline preload="metadata" style="width: 100%; height: auto; border-radius: 8px;">
+  <source src="{{ '/assets/videos/physical-ai/ur10-ppo-reach-4k.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support embedded MP4 video.
+</video>
 
-- Designed composable OpenUSD robot and workcell examples with explicit scale,
-  coordinate, calibration, identity, and version metadata.
-- Built a deterministic JSONL scenario planner with bounded domain
-  randomization, data splits, SHA-256 checksums, and reproducible manifests.
-- Implemented validation for paths, schemas, units, frames, calibration,
-  distributions, provenance, execution claims, and generated artifacts.
-- Created a shared point-reach reinforcement-learning contract across an
-  analytical CPU environment and an Isaac Lab/PhysX rigid-body proxy.
-- Added pinned container and scheduler workflows for repeatable headless Isaac
-  Lab validation on GPU infrastructure.
+The six-joint UR10e is controlled by a PPO policy trained with RSL-RL. The
+policy observes the robot and target state, then produces joint-position
+commands at 30 Hz while PhysX runs at 120 Hz.
 
-## Architecture
+### Autonomous 4K pick-and-place
 
-![Physical AI pipeline showing the portable contract layer, verified headless proxy, and staged simulator, training, and deployment gates.](/images/projects/physical-ai-architecture.svg)
+<video controls playsinline preload="metadata" style="width: 100%; height: auto; border-radius: 8px;">
+  <source src="{{ '/assets/videos/physical-ai/pick-and-place-4k.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support embedded MP4 video.
+</video>
 
-The portable workflow normalizes source inputs, composes OpenUSD assets, creates
-deterministic scenario plans, and records validation evidence. The optional
-Isaac Lab adapter preserves the same observation, action, timing, reset,
-randomization, and reward contracts while replacing analytical dynamics with a
-PhysX rigid body.
+This separate controller uses a surface gripper and a deterministic state
+machine to lift, carry, and place a cube. I kept it separate from the RL demo so
+the project does not label scripted behavior as learned behavior.
 
-## Reinforcement Learning
+## What I Built
 
-The project defines `PhysicalAI-PointReach-v0`, an analytical two-dimensional
-point-reach environment used to make the learning contract inspectable before
-moving it into a heavier simulator.
+- A manager-based Isaac Lab task for a six-joint UR10e with a 25-value
+  observation space and six continuous actions.
+- RSL-RL PPO training, checkpoint selection, and repeatable evaluation across
+  nominal, randomized, and stress conditions.
+- OpenUSD scene and data contracts, deterministic validation, and
+  hash-tracked experiment artifacts.
+- SLURM and Apptainer workflows for headless GPU runs, plus a software-only ROS
+  2 safety boundary for validating commands and failure handling.
 
-- The policy observes planar position, velocity, and target displacement as a
-  six-value vector.
-- It produces two normalized force commands that are clipped before entering
-  the analytical dynamics or Isaac Lab adapter.
-- Named reward terms cover progress, remaining distance, action magnitude,
-  velocity, settled success, and workspace violations.
-- Seeded resets support domain randomization over initial state, target, mass,
-  damping, actuator gain, observation noise, and action delay, with a
-  three-level curriculum.
-- Random and PD controllers provide classical baselines; an optional
-  Stable-Baselines3 PPO workflow adds configuration snapshots, multi-condition
-  evaluation, and hash-bound policy lineage.
+## Results
 
-The Isaac Lab proxy maps the same observation, action, reward, reset, and
-termination semantics to a force-driven PhysX rigid body. This establishes a
-testable analytical-to-simulator contract; it does not claim a trained Isaac
-policy, articulated-robot control, or sim-to-real performance.
+| Test | Measured result |
+|---|---|
+| UR10e policy evaluation | Passed all 9 reports: 3 seeds x nominal, randomized, and stress conditions |
+| Evaluation scale | 512 episodes and 44,800 settled samples per report |
+| 4K pick-and-place | Successful 0.800 m lift with 0.129 m final target error |
+| Safety fault suite | Passed 15/15 software-in-the-loop scenarios |
+| GPU runtime | Verified in Isaac Lab on one NVIDIA L40S, including a standalone SLURM job |
 
-## Technical Highlights
+The final UR10e policy is validated in articulated simulation. The project does
+not claim physical-robot testing or sim-to-real deployment.
 
-- Python 3.10 standard-library core
-- Human-readable USDA scene composition with an illustrative URDF source asset
-- Deterministic synthetic-data planning
-- JSONL manifests and SHA-256 artifact lineage
-- Gymnasium and Stable-Baselines3 integration
-- Isaac Sim 6.0.1 and Isaac Lab 3
-- PhysX/CUDA headless simulation
-- SLURM and Apptainer launch workflows
-- Automated contract, integration, and asset-validation tests
-
-## Verified Results
-
-- Recorded 80 passing portable tests with 15 expected optional-dependency skips.
-- Recorded 11 passing offline Isaac integration and contract tests without
-  launching Kit or PhysX.
-- Completed a finite headless smoke test with four parallel environments over
-  120 control steps on one NVIDIA L40S.
-- The smoke test exited successfully with no reported CUDA or PhysX error.
-- Strict pipeline and generated-manifest validation completed with zero errors
-  and zero warnings.
-
-## Scope and Next Steps
-
-The current Isaac Lab task is a force-driven rigid-body proxy, not an
-articulated production robot. The verified run establishes simulator startup,
-task registration, reset, and finite stepping. It does not claim graphical UI
-validation, rendered datasets, PPO training quality, sim-to-real transfer, or
-physical deployment.
-
-Next steps include authoritative articulated assets, Replicator rendering,
-held-out policy evaluation, ROS 2 interfaces, SIL/HIL testing, and staged
-hardware safety validation.
+**Stack:** Python, PyTorch, RSL-RL, NVIDIA Isaac Sim/Isaac Lab, PhysX, OpenUSD,
+Gymnasium, ROS 2-style contracts, Apptainer, and SLURM.
