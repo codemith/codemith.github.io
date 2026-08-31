@@ -33,6 +33,7 @@ $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 html[data-theme="dark"] {
+  color-scheme: dark;
   --global-base-color                 : #{$primary-color};
   --global-bg-color                   : #{$background};
   --global-footer-bg-color            : #{$background-light};

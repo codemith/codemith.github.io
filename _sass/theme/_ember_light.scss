@@ -4,9 +4,9 @@
 
 /* Pure black, pure white, and one vivid orange accent. */
 $primary-color              : #ff6600;
-$gray                       : #ffffff;
-$dark-gray                  : #ffffff;
-$darker-gray                : #ffffff;
+$gray                       : #000000;
+$dark-gray                  : #000000;
+$darker-gray                : #000000;
 $light-gray                 : #ff6600;
 $lighter-gray               : #ff6600;
 
@@ -26,21 +26,22 @@ $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 :root {
+  color-scheme: light;
   --global-base-color                 : #{$primary-color};
-  --global-bg-color                   : #000000;
-  --global-footer-bg-color            : #000000;
+  --global-bg-color                   : #ffffff;
+  --global-footer-bg-color            : #ffffff;
   --global-border-color               : #{$lighter-gray};
   --global-dark-border-color          : #ff6600;
-  --global-code-background-color      : #000000;
-  --global-code-text-color            : #ffffff;
-  --global-fig-caption-color          : #ffffff;
+  --global-code-background-color      : #f7f7f7;
+  --global-code-text-color            : #000000;
+  --global-fig-caption-color          : #000000;
   --global-link-color                 : #{$primary-color};
   --global-link-color-hover           : #ff6600;
   --global-link-color-visited         : #ff6600;
   --global-masthead-link-color        : #{$dark-gray};
   --global-masthead-link-color-hover  : #{$primary-color};
   --global-text-color                 : #{$dark-gray};
-  --global-text-color-light           : #ffffff;
+  --global-text-color-light           : #000000;
   --global-thead-color                : #ff6600;
   --global-accent-text-color          : #ffffff;
   --global-accent-hover-color         : #ff6600;
